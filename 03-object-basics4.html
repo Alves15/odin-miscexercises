@@ -13,7 +13,7 @@
         box-sizing: border-box;
       }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
+
   </head>
 
   <body>
@@ -37,12 +37,15 @@
 
     function Cat(name, breed, color){
       this.name = name;
-      this.breed = name;
-      this.name = name;
-      greeting = function() {
+      this.breed = breed;
+      this.name = color;
+      this.greeting = function() {
         console.log(`Hello, said ${ this.name } the ${ this.breed }.`);
       }
     }
+
+    const Cat1 = new Cat ("Mio", "void", "black");
+    Cat1.greeting();
   </script>
 
 </html>
