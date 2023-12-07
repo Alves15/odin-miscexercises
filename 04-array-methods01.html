@@ -12,7 +12,10 @@
 
     function camelize(str){
       let camel = str.split("-");
-      camel.forEach((element) => console.log(element));
+      camel.forEach((element, index, array) => 
+        console.log(element.slice(0,1).toUpperCase() + element.slice(1))
+      )
+      
       return camel;
       
     }
