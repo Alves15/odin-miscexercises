@@ -8,19 +8,16 @@
 <body>
   <script>
 
-    let ok = [];
     let test = "border-left-width";
     let res = [];
     
     function camelize(str){
       let camel = str.split("-");
-      
-      
-      camel.forEach((element, index, array) => res[index] = (element.slice(0,1).toUpperCase() + element.slice(1)))
+           
+      camel.forEach((element, index) => res[index] = (element.slice(0,1).toUpperCase() + element.slice(1)))
       
       let newCamel = res.join("");
-      return newCamel;
-      
+      return newCamel;     
     }
 
     console.log(camelize(test));
